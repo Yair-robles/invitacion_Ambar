@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ambar XV//ES
+BEGIN:VEVENT
+UID:ambar-xv-20261204
+DTSTAMP:20261105T043000Z
+DTSTART:20261205T020000Z
+SUMMARY:Recepción · XV de Ambar Aislinn López Tadeo
+LOCATION:Salón Alventos\, Av. Patria Ote. 211B\, 20 de Noviembre\, 45404
+  Guadalajara\, Jalisco
+DESCRIPTION:8:00 p. m. Vestimenta formal. Lluvia de sobres.
+URL:https://maps.app.goo.gl/Tyvag7RxmKfdYtEX9
+END:VEVENT
+END:VCALENDAR

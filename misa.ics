@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ambar XV//ES
+BEGIN:VEVENT
+UID:ambar-xv-misa-20261204
+DTSTAMP:20261105T043000Z
+DTSTART:20261205T003000Z
+SUMMARY:Misa · XV de Ambar Aislinn López Tadeo
+LOCATION:Parroquia del Espíritu Santo\, C. Miguel Ramos Arizpe 385\, Mag
+ aña\, 44800 Guadalajara\, Jalisco
+DESCRIPTION:Misa a las 6:30 p. m.
+URL:https://maps.app.goo.gl/hG8f8bW8Mpdmwea76
+END:VEVENT
+END:VCALENDAR
