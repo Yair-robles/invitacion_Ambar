@@ -8,6 +8,17 @@
 <meta name="robots" content="noindex,nofollow">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#faf8f5;color:#342b2e;font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:660px;margin:auto;padding:28px 22px}h1{font-size:24px;line-height:1.3;margin:0 0 10px}h2{font-size:19px;margin:0 0 12px}p{margin:8px 0}.context{font-size:14px;color:#695b60;margin-bottom:24px}section{padding:22px 0;border-top:1px solid #ded5d8}a{color:#744656;text-underline-offset:4px;display:inline-block;padding:8px 0;font-weight:600}a:focus-visible{outline:2px solid #744656;outline-offset:4px}.schedule-item+.schedule-item{margin-top:22px}.schedule-item p{margin:4px 0}.small{font-size:14px;color:#695b60}.envelopes{background:#f1e8eb;padding:20px;border:1px solid #dac6ce;border-radius:6px;margin-bottom:22px}.envelopes h2{font-size:22px;color:#744656}ol{padding-left:23px;margin:12px 0}li{padding-left:4px;margin:12px 0}.voluntary{margin-top:16px;padding-top:12px;border-top:1px solid #dac6ce;font-size:14px}.formal{font-weight:700;letter-spacing:1px}
+
+.envelope-demo{margin:8px auto 16px;text-align:center}
+.envelope-demo svg{display:block;width:220px;max-width:100%;height:145px;margin:auto}
+.demo-envelope{transform-origin:110px 35px;animation:drop-envelope 4s ease-in-out both}
+.demo-spark{animation:gift-spark 4s ease-in-out both}
+@keyframes drop-envelope{0%{transform:translateY(-12px) rotate(-12deg);opacity:0}18%,35%{transform:translateY(0) rotate(0);opacity:1}78%,100%{transform:translateY(90px);opacity:1}}
+@keyframes gift-spark{0%,65%{opacity:0}80%{opacity:1}100%{opacity:0}}
+.demo-replay{font:inherit;font-size:12px;padding:6px 12px;border:1px solid #b99aa6;border-radius:16px;color:#744656;background:transparent;cursor:pointer}
+.demo-replay:focus-visible{outline:2px solid #744656;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.demo-envelope,.demo-spark{animation:none}.demo-spark{opacity:0}.demo-replay{display:none}}
+
 </style>
 </head>
 <body>
@@ -16,6 +27,22 @@
 <p class="context">XV de Ambar Aislinn · Viernes 4 de diciembre de 2026</p>
 <section class="envelopes" aria-labelledby="sobres">
 <h2 id="sobres">¿Cómo funciona la lluvia de sobres?</h2>
+<div class="envelope-demo">
+<svg viewBox="0 0 220 145" aria-hidden="true" focusable="false">
+<ellipse cx="110" cy="135" rx="65" ry="5" fill="#dac6ce"/>
+<path d="M51 85 L65 73 H155 L169 85 V129 H51Z" fill="#d1b0bd"/>
+<rect x="81" y="79" width="58" height="4" rx="2" fill="#744656"/>
+<g class="demo-envelope">
+<rect x="85" y="12" width="50" height="33" rx="3" fill="#fffaf6" stroke="#996b7e" stroke-width="1.5"/>
+<path d="M86 14 L110 31 L134 14 M86 43 L103 29 M134 43 L117 29" stroke="#996b7e" stroke-width="1.5" fill="none"/>
+</g>
+<path d="M51 87 H169 V127 Q169 133 163 133 H57 Q51 133 51 127Z" fill="#b98e9f"/>
+<rect x="79" y="100" width="62" height="22" rx="3" fill="#fffaf6"/>
+<text x="110" y="115" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#744656">Con cariño</text>
+<g class="demo-spark" fill="#996b7e"><path d="M30 57 l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/><path d="M187 51 l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></g>
+</svg>
+<button type="button" class="demo-replay">Repetir animación ↻</button>
+</div>
 <ol>
 <li>En la entrada del salón te entregaremos un <strong>sobre</strong>.</li>
 <li>Si deseas participar, coloca dentro un <strong>regalo en efectivo por la cantidad que tú quieras</strong>.</li>
@@ -44,5 +71,14 @@
 <p>Por favor, evita el color rosa.</p>
 </section>
 </main>
+<script>
+document.querySelector('.demo-replay').addEventListener('click', function () {
+  document.querySelectorAll('.demo-envelope,.demo-spark').forEach(function (element) {
+    element.style.animation = 'none';
+    void element.getBoundingClientRect();
+    element.style.animation = '';
+  });
+});
+</script>
 </body>
 </html>
