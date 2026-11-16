@@ -57,6 +57,11 @@ section[aria-labelledby="vestimenta"]{background:#f0e8ec;border-radius:16px;padd
 .formal{font-size:32px;letter-spacing:4px;color:#744656;line-height:1.2;margin:15px 0}
 @media(max-width:380px){main{padding:25px 16px}.envelopes{padding:24px 18px}.date-chip{font-size:11px}.steps li{gap:10px}}
 
+
+.punctuality{background:#744656;color:#fffaf6;border-radius:16px;padding:22px;margin:0 0 18px;border-left:5px solid #cda3b4}
+.punctuality-label{font-size:11px;font-weight:700;letter-spacing:2px;margin:0 0 8px;color:#f2dce5}
+.punctuality h3{font-size:25px;line-height:1.2;margin:0 0 12px}
+.punctuality p:not(.punctuality-label){font-size:14px;line-height:1.7;margin:10px 0 0}
 </style>
 </head>
 <body>
@@ -90,6 +95,12 @@ section[aria-labelledby="vestimenta"]{background:#f0e8ec;border-radius:16px;padd
 </section>
 <section aria-labelledby="horarios">
 <h2 id="horarios" class="section-title"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Horarios y ubicaciones</h2>
+<aside class="punctuality" aria-labelledby="puntualidad">
+<p class="punctuality-label">IMPORTANTE</p>
+<h3 id="puntualidad">¡Te pedimos llegar puntual!</h3>
+<p>La celebración seguirá un programa con horarios para cada momento. <strong>Tu puntualidad nos ayudará a comenzar a tiempo y a no retrasar las actividades.</strong></p>
+<p>Por favor, llega a la misa a las <strong>6:15 p. m.</strong> y a la recepción a las <strong>8:00 p. m.</strong> ¡Gracias por ayudarnos a disfrutar cada momento!</p>
+</aside>
 <div class="schedule-item">
 <div class="venue-heading"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v6M9 4h6M4 12l8-5 8 5v9H4Z M10 21v-6h4v6"/></svg><div><h3>Misa</h3><p class="event-time">6:30 p. m.</p></div></div>
 <p>Parroquia del Espíritu Santo</p>
@@ -99,7 +110,7 @@ section[aria-labelledby="vestimenta"]{background:#f0e8ec;border-radius:16px;padd
 <div class="schedule-item">
 <div class="venue-heading"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8C2 8 5 0 9 4l3 4c10 0 7-8 3-4l-3 4"/></svg><div><h3>Recepción</h3><p class="event-time">8:00 p. m.</p></div></div>
 <p>Salón Alventos</p>
-<p class="small">Por favor, llega puntualmente.</p>
+<p class="small"><strong>Llega puntual a las 8:00 p. m.</strong> La fiesta tendrá actividades programadas; ayúdanos a no retrasarlas.</p>
 <a href="https://maps.app.goo.gl/Tyvag7RxmKfdYtEX9?g_st=ac" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Ubicación del salón <span aria-hidden="true">↗</span></a>
 </div>
 </section>
